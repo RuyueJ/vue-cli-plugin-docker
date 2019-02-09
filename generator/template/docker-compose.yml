@@ -1,0 +1,20 @@
+# Containers will use .env file if it exists.
+
+version: '3'
+
+services:
+  web:
+    build: .
+    command: npm run dev
+    environment:
+      - PORT=9001
+      - NODE_CONFIG_STRICT_MODE=1
+    ports:
+      - "9001:9001"
+    volumes:
+      - .:/home/node/app
+      - node_modules:/home/node/app/node_modules
+
+  volumes:
+    node_modules:
+      

@@ -8,12 +8,21 @@ We are going to use it to add Dockerfile
 
 // add new npm tasks to the project
 module.exports = (api, options, rootOptions) => {
-    api.extendPackage({
-        scripts: {
+    // api.extendPackage({
+    //     scripts: {
 
-        }
-    });
-    
-    api.render('./template')
+    //     }
+    // });
+
+    if (options.addTemplateDockerfile) {
+        api.render('./template/Dockerfile', {
+          ...options,
+        });
+    }
+    if (options.addTemplateDocker_Compose) {
+        api.render('./template/docker-compose.yml', {
+          ...options,
+        });
+    }
 }
 

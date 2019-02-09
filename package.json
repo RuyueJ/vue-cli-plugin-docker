@@ -1,0 +1,17 @@
+{
+    "name": "vue-cli-plugin-docker-rj",
+    "version": "0.1.0",
+    "description": "vue-cli-3 plugin for adding Dockerfile and docker-compose file",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/RuyueJ/vue-cli-docker-plugin.git"
+    },
+    "keywords": [
+        "vue-cli",
+        "plugin",
+        "docker"
+    ],
+    "author": "Ruyue Jin <ruyue.jin@xxx.com>",
+    "license": "MIT"
+}
