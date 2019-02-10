@@ -5,15 +5,9 @@ an example component or not.
 
 module.exports = [
     {
-      name: `addTemplateDockerfile`,
+      name: `addTemplateDockerNode`,
       type: 'confirm',
-      message: 'Add Template Dockerfile?',
-      default: false,
-    },
-    {
-      name: `addTemplateDocker_Compose`,
-      type: 'confirm',
-      message: 'Add Template docker-compose.yml?',
+      message: 'Add Template Dockerfiles for node?',
       default: false,
     }
   ];

@@ -14,13 +14,8 @@ module.exports = (api, options, rootOptions) => {
     //     }
     // });
 
-    if (options.addTemplateDockerfile) {
-        api.render('./template/Dockerfile', {
-          ...options,
-        });
-    }
-    if (options.addTemplateDocker_Compose) {
-        api.render('./template/docker-compose.yml', {
+    if (options.addTemplateDockerNode) {
+        api.render('./template/node', {
           ...options,
         });
     }
